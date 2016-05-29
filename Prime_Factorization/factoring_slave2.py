@@ -20,7 +20,6 @@ def slave_init(net_iface, ns_ip, node_id):
 # BEGINNING OF SHARED FUNCTION DEFINITIONS
 
 
-
 def isPrime(i):
     k=2
     while k<i:
@@ -33,11 +32,8 @@ def isPrime(i):
     else:
         return 1
 
-
-
 def p_factor_search(beginning,end,comp_num):
         logging.debug('Starting')
-		
 		i = beginning
         j=end
         c=comp_num
@@ -53,21 +49,11 @@ def p_factor_search(beginning,end,comp_num):
                     q=c/i
                     pFactors.append(i)
                     pFactors.append(q)
-                i=c+1 #exit the program
+                i=c+1 #reset i to be out of range, close loop   
             else:
-                i+=1 #increment by 2
-	#time.sleep(5)
-	logging.debug('Exiting')		
-        return factors
-		
-        while i <= end:
-                if comp_num % i == 0:
-                        #We have found a factor..is it prime?
-						if (primetest(i) == 1):
-							factors.append(i)
-                i += 1
+                i+=1
         logging.debug('Exiting')
-        return factors
+	return factors
 
 # This function must be made available to the API
 
