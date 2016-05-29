@@ -15,5 +15,5 @@ Python Remote Objects (Pyro4) is used to divide tasks in parallel among a Pi Clu
 The same task is accomplished using pre-defined remote object methods with minimal overhead (in testing, a 5-10% run time overhead was observed).
 
 ####Runtime Environment
--Raspbian Jessie v4.4
--Pyro4 v4.45
+*Raspbian Jessie v4.4
+*Pyro4 v4.45
