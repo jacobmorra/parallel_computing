@@ -1,6 +1,6 @@
-#Vanilla Factoring vs. Factoring with Lescisin's API
+#Prime Factorization with DCM, Mpi4py, PP, and PyRO
 
-##Vanilla Factoring
+##PyRO
 
 ####Associated Files: vanilla_master1.py, vanilla_slave1.py, vanilla_slave2.py
 
@@ -8,7 +8,7 @@ Prime Factors are found for the purpose of finding keys p and q (such that p*q=n
 
 Python Remote Objects (Pyro4) is used to divide tasks in parallel among a Pi Cluster. See [Pyro4](https://pythonhosted.org/Pyro4/)
 
-##Factoring with Lescisin's API
+##DCM
 
 ####Associated Files: factoring_master1.py, factoring_slave1.py, factoring_slave2.py
 
@@ -17,3 +17,5 @@ The same task is accomplished using pre-defined remote object methods with minim
 ####Runtime Environment
 *Raspbian Jessie v4.4
 *Pyro4 v4.45
+*PP
+*Mpi4py
